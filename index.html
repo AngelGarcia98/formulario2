@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="scrpt.js"></script>
+
+    <h1 id=title> Formato del bootcamp</h1>
+
+    <p id="description">Este es un formato de prueba</p>
+</head>
+
+<body>
+
+    <form id="survey-form">
+
+        <div class="inputElement">
+
+            <label id="name-label">
+                Nombre
+            </label>
+            <input id="name" type="text" placeholder="Escribe tu nombre" required></input>
+            <label>
+        </div>
+
+        <div class="inputElement">
+            <label id="email-label">
+                Apellido
+            </label>
+            <input id="email" type="email" placeholder="Escribe tu nombre" required></input>
+            <label>
+        </div>
+
+        <div class="inputElement">
+            <label id="number-label">
+                edad
+            </label>
+            <input id="number" type="number" min="18" max="50" required placeholder="edad"></input>
+            <label>
+        </div>
+
+        <div>
+            <label id="select-label">
+                ¿Aque equuipo le vas?
+                <select id="dropdown">
+                    <option>America</option>
+                    <option>Chivas</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div>
+            <label id="button-label">
+                ¿Haces deporte?
+
+                <input type="radio" name="hacer-deporte" value="si">Si</input>
+                <input type="radio" name="hacer-deporte" value="no">No</input>
+            </label>
+        </div>
+
+        <div>
+            <label>He llenado el formulario</label>
+            <input type="checkbox" value="aceptado">
+            <label>Acepto terminos y condiciones</label>
+            <input type="checkbox" value="aceptado">
+        </div>
+
+        <div>
+            <label id="advertencia">En caso de tener alguna enfermedad hazlo saber</label>
+        </div>
+        <div>
+            <textarea type="text"></textarea>
+        </div>
+        <div>
+            <button id="submit" onclick="alerta()">
+                Enviar
+            </button>
